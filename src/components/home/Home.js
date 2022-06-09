@@ -6,7 +6,6 @@ import Button from '../button/Button';
 import { BsMouse } from 'react-icons/bs';
 
 const Home = ({ stopScrolling }) => {
-
     const [isSpinning, setIsSpinning] = useState(true);
 
     useEffect(() => {
@@ -20,11 +19,15 @@ const Home = ({ stopScrolling }) => {
         
     }, [isSpinning])
 
+    useEffect(() => {
+        const toggle = document.querySelector('.hover-show');
+        toggle.classList = "hover-show active";
+    }, [])
 
     return (
         <div id="home" className="container home-container">
             <div className="logo">
-                <div className='hover-show active' onClick={() => setIsSpinning(!isSpinning)} >
+                <div className="hover-show" onClick={() => setIsSpinning(!isSpinning)} >
                     <span className='circle'></span>
                     <span className='circle'></span>
                     <span className='circle'></span>
