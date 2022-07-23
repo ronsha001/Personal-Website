@@ -4,8 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 100vh;
-    margin-top: 100px;
+    height: fit-content;
     padding: 50px;
     overflow-x: hidden;
     backdrop-filter: blur(20px);

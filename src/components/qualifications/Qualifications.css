@@ -4,26 +4,23 @@
 }
 
 .qualifications-container {
-    position: absolute;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    flex-wrap: wrap;
     height: 80%;
     width: 90%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: 'smooth';
     margin-top: 15px;
     user-select: none;
 }
 
 .qualifications-container .qualification {
     position: relative;
-    height: 550px;
-    min-width: 40%;
+    height: 220px;
+    width: 140px;
+    /* min-width: 10%; */
     background-color: rgb(9, 6, 31);
     border-radius: 20px;
-    margin: 0 20px 0 0;
+    margin: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -37,84 +34,108 @@
     margin-top: 20px;
     background-size: contain;
     background-position: center;
+    align-items: center;
 }
 
 .qualifications-container .qualification h1 {
     font-size: 20px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .qualifications-container .qualification .content.html {
-    background: rgba(255, 255, 255, 0.103) url(../../images/html.png);
-    background-position: center;
-    background-repeat: space;
-    background-size: 76px;
+    background: rgba(255, 255, 255, 0.103) ;
+    background-image: url(../../images/html.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.css {
-    background: rgba(255, 255, 255, 0.103) url(../../images/css.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: space;
-    background-size: 76px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/css.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.javascript {
-    background: rgba(255, 255, 255, 0.103) url(../../images/js.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: space;
-    background-size: 82px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/js.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.react {
-    background: rgba(255, 255, 255, 0.103) url(../../images/react.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: space;
-    background-size: 70px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/react.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.node {
-    background: rgba(255, 255, 255, 0.103) url(../../images/nodejs_logo.png);
-    background-position: center;
-    background-size: cover;
-    background-size: 75px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/nodejs_logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.php {
-    background: rgba(255, 255, 255, 0.103) url(../../images/PHP-logo.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: space;
-    background-size: 80px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/PHP-logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.python {
-    background: rgba(255, 255, 255, 0.103) url(../../images/Python.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: space;
-    background-size: 73px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/Python.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.java {
-    background: rgba(255, 255, 255, 0.103) url(../../images/Java_programming_language_logo.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: space;
-    background-size: 66px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/Java_programming_language_logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.mongoDB {
-    background: rgba(255, 255, 255, 0.103) url(../../images/mongodb.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: space;
-    background-size: 110px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/mongodb.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .qualifications-container .qualification .content.sql {
-    background: rgba(255, 255, 255, 0.103) url(../../images/Sql_data_base_with_logo.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: space;
-    background-size: 100px;
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/Sql_data_base_with_logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.qualifications-container .qualification .content.cisco {
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/ccna.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.qualifications-container .qualification .content.npm {
+    background: rgba(255, 255, 255, 0.103);
+    background-image: url(../../images/npm.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 550px) {
+    .qualifications-container {
+        
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media (max-width: 450px) {
+    .qualifications-container .qualification {
+        height: 180px;
+        width: 100px;
+    }
+    .qualifications-container .qualification h1 {
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 20px;
+    }
+}
+
+/* @media (max-width: 820px) {
     .quali-text {
         font-size: 30px;
         top: 10px;
@@ -359,4 +380,4 @@
         margin-top: 20px;
         font-weight: 200;
     }
-}
+} */

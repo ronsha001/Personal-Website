@@ -22,9 +22,9 @@ function App() {
       
       
       <Header />
-      <Navbar stopScrolling={stopScrolling} />
-      <Home stopScrolling={stopScrolling} />
-      <About scrolling={scrolling} setScrolling={setScrolling} />
+      <Navbar />
+      <Home />
+      <About />
       <Projects />
       <Contact />
       <Footer stopScrolling={stopScrolling} />

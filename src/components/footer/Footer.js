@@ -4,12 +4,12 @@ import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { TiSocialGithubCircular } from "react-icons/ti";
 
-const Footer = ({ stopScrolling }) => {
+const Footer = () => {
     return (
         <div id="footer" className="container footer-container">
             <h1>
                 That's all{" "}
-                <a href="#home" onClick={stopScrolling}>
+                <a href="#home" >
                     <h2>
                         <BsMouse /> - scroll up -
                     </h2>

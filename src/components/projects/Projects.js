@@ -1,10 +1,9 @@
 import './Projects.css';
-import getagent from '../../images/getagent.jpg';
 
 const Members = () => {
     return (
         <div id="members" className="container members-container">
-            <h1 className="member-txt">Projects</h1>
+            <h1 className="member-txt">Projects <a href='https://github.com/ronsha001?tab=repositories' target="_blank">GitHub Link</a></h1>
             <div className="member member-1">
                 <div className="member-img"></div>
                 <div className="member-info">
@@ -31,6 +30,22 @@ const Members = () => {
                     </h4>
                     <a href="http://getagent.infinityfreeapp.com/index.php" target={"_blank"} className="contact-member">
                         <span>GetAgent</span>
+                    </a>
+                </div>
+            </div>
+
+            <div className="member member-4">
+                <div className="member-img"></div>
+                <div className="member-info">
+                    <h1 className="name">Travel App</h1>
+                    <h3 className="position"> Node.js MVC Project </h3>
+                    <h4 className="about">
+                        Model View Controller architecture with csrf session protection + Auth + Authrorization + <br />
+                        Error Handling + Validation + AWS S3 Bucket + Stripe payment + Cloudinary images media and etc..
+                        
+                    </h4>
+                    <a href="https://travel-node-app.herokuapp.com/" target={"blank"} className="contact-member">
+                        <span>Travel App</span>
                     </a>
                 </div>
             </div>
